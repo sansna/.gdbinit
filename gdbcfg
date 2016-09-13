@@ -1,4 +1,6 @@
-#use -x this_file when gdb.
+# use -x this_file when gdb.
+# Or cp gdbcfg ~/.gdbinit to
+# let gdb open this file as default setting.
 set listsize 10
 set print array on
 set print array-indexes on
