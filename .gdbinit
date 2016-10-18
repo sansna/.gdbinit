@@ -1,3 +1,4 @@
+# ~/.gdbinit: gdb startup configure file.
 # use -x this_file when gdb.
 # Or cp gdbcfg ~/.gdbinit to
 # let gdb open this file as default setting.
@@ -10,3 +11,11 @@ set print pretty on
 set print union on
 set print demangle on
 set multiple-symbols ask
+
+# instructions when using gdb:
+# c-x,s enters tui mode.
+# c/n/f/s/u/d/v/w in tui mode.
+# c-x,c-a to exit tui mode.
+# p/t var to print var as ntw,
+# where t = c/i/x/..
+# x/ntw where n=int, t=type, w=width to view memory.
