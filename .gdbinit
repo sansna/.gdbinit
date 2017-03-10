@@ -19,3 +19,14 @@ set multiple-symbols ask
 # p/t var to print var as ntw,
 # where t = c/i/x/..
 # x/ntw where n=int, t=type, w=width to view memory.
+
+# User-defined Commands
+define pp
+p *$arg0
+end
+
+define psi
+p sizeof(struct $arg0)
+end
+
+# Aliases, Pattern: alias [-a] [--] shortcuts = normal commands
