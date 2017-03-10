@@ -28,5 +28,23 @@ end
 define psi
 p sizeof(struct $arg0)
 end
+# End of UDC
 
 # Aliases, Pattern: alias [-a] [--] shortcuts = normal commands
+
+
+# End of aliases.
+
+# Sources from others' contributions..
+# From mammon/gdb_init
+define bp
+ info breakpoints
+end
+document bp
+Print breakpoints
+end
+
+define bd
+ del break $0
+end
+# End
