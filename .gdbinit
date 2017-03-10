@@ -45,6 +45,6 @@ Print breakpoints
 end
 
 define bd
- del break $0
+ del break $arg0
 end
 # End
