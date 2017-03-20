@@ -30,6 +30,22 @@ p sizeof(struct $arg0)
 end
 # End of UDC
 
+define p0
+p $arg0[0]
+end
+
+define p1
+p $arg0[1]
+end
+
+define p2
+p $arg0[2]
+end
+
+define p3
+p $arg0[3]
+end
+
 # Aliases, Pattern: alias [-a] [--] shortcuts = normal commands
 
 
