@@ -22,28 +22,48 @@ set multiple-symbols ask
 
 # User-defined Commands
 define pp
-p *$arg0
+    p *$arg0
 end
 
 define psi
-p sizeof(struct $arg0)
+    p sizeof(struct $arg0)
 end
 # End of UDC
 
 define p0
-p $arg0[0]
+    p $arg0[0]
 end
 
 define p1
-p $arg0[1]
+    p $arg0[1]
 end
 
 define p2
-p $arg0[2]
+    p $arg0[2]
 end
 
 define p3
-p $arg0[3]
+    p $arg0[3]
+end
+
+define px
+    p/x *$arg0
+end
+
+define po
+    p/o *$arg0
+end
+
+define pt
+    p/t *$arg0
+end
+
+define ps
+    p/s $arg0
+end
+
+define pas
+    p ((struct $arg0)$arg1)
 end
 
 # Aliases, Pattern: alias [-a] [--] shortcuts = normal commands
@@ -54,13 +74,13 @@ end
 # Sources from others' contributions..
 # From mammon/gdb_init
 define bp
- info breakpoints
+    info breakpoints
 end
 document bp
 Print breakpoints
 end
 
 define bd
- del break $arg0
+    del break $arg0
 end
 # End
