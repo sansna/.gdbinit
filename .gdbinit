@@ -12,6 +12,7 @@ set print union on
 set print demangle on
 set multiple-symbols ask
 set stop-on-solib-events 1
+set step-mode on
 
 # instructions when using gdb:
 # c-x,s enters tui mode.
