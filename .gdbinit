@@ -11,6 +11,7 @@ set print pretty on
 set print union on
 set print demangle on
 set multiple-symbols ask
+set stop-on-solib-events 1
 
 # instructions when using gdb:
 # c-x,s enters tui mode.
