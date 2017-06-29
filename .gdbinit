@@ -85,4 +85,18 @@ end
 define bd
     del break $arg0
 end
+
+define bn
+    enable br $arg0
+end
+document bp
+Enable breakpoints
+end
+
+define bp
+    disable br $arg0
+end
+document bp
+Disable breakpoints
+end
 # End
