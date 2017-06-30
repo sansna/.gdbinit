@@ -89,14 +89,14 @@ end
 define bn
     enable br $arg0
 end
-document bp
+document bn
 Enable breakpoints
 end
 
-define bp
+define bf
     disable br $arg0
 end
-document bp
+document bf
 Disable breakpoints
 end
 # End
