@@ -12,6 +12,8 @@ set print union on
 set print demangle on
 set multiple-symbols ask
 set stop-on-solib-events 1
+# Inferiors means different processes being debugged under gdb.
+set print inferior-events on
 set step-mode on
 
 # instructions when using gdb:
