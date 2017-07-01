@@ -12,9 +12,18 @@ set print union on
 set print demangle on
 set multiple-symbols ask
 set stop-on-solib-events 1
-# Inferiors means different processes being debugged under gdb.
+# Inferiors mean different processes being debugged in gdb.
 set print inferior-events on
 set step-mode on
+
+# Observer mode, default off, if set to on, it enables non-stop debugging
+#set observer on
+# Non-stop mode start: `show non-stop` to view mode. Note to set this mode
+#+ on before start/connects debugging, change mode during debugging is
+#+ generally not supported.
+#set pagination off
+#set non-stop on
+# Non-stop mode end
 
 # instructions when using gdb:
 # c-x,s enters tui mode.
