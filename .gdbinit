@@ -11,12 +11,15 @@ set print pretty on
 set print union on
 set print demangle on
 set multiple-symbols ask
-set stop-on-solib-events 1
+# Stop everytime when shared lib loads.
+#set stop-on-solib-events 1
 # Inferiors mean different processes being debugged in gdb.
 set print inferior-events on
 set step-mode on
 # Set Breakpoints even when breakpoint symbol not found in current scope.
 set breakpoint pending on
+# To set breakpoints at thread fork. Use info func pthread_create, and b the
+#+ functions which as numbers with them but no '@'
 
 # Observer mode, default off, if set to on, it enables non-stop debugging
 #set observer on
