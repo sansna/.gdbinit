@@ -21,6 +21,14 @@ set breakpoint pending on
 # To set breakpoints at thread fork. Use info func pthread_create, and b the
 #+ functions which as numbers with them but no '@'
 
+# Here are some defines for cpp-stl:
+#+ from http://www.yolinux.com/TUTORIALS/src/dbinit_stl_views-1.01.txt
+#set print object on
+#set print static-members on
+#set print vtbl on
+#set demangle-style gnu-v3
+#set print sevenbit-strings off
+
 # Observer mode, default off, if set to on, it enables non-stop debugging
 #set observer on
 # Non-stop mode start: `show non-stop` to view mode. Note to set this mode
