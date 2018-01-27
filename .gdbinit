@@ -123,4 +123,25 @@ end
 document bf
 Disable breakpoints
 end
+
+define hw
+	set can-use-hw-watchpoints 1
+end
+document hw
+Switch to use hardware breakpoints, which is faster.
+end
+
+define sw
+	set can-use-hw-watchpoints 0
+end
+document sw
+Set to use software breakpoints, thus no size/count limit on watched var.
+end
+
+define cw
+	show can-use-hw-watchpoints
+end
+document sw
+Show if currently using hw-breakpoints
+end
 # End
