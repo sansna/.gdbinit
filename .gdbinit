@@ -128,20 +128,21 @@ define hw
 	set can-use-hw-watchpoints 1
 end
 document hw
-Switch to use hardware breakpoints, which is faster.
+Switch to use hardware watchpoints, which is faster.
 end
 
 define sw
 	set can-use-hw-watchpoints 0
 end
 document sw
-Set to use software breakpoints, thus no size/count limit on watched var.
+Set to use software watchpoints, thus no size/count limit on watched vars.
+And also, software watchpoints can only watch current thread noticeable vars.
 end
 
 define cw
 	show can-use-hw-watchpoints
 end
 document sw
-Show if currently using hw-breakpoints
+Show if currently using hw-watchpoints
 end
 # End
